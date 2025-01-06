@@ -1,6 +1,6 @@
+@import '_fonts';
 @import '_null-style';
 @import '_var';
-@import '_fonts';
 
 
 
@@ -9,30 +9,10 @@
     padding-right: calc(50% - (1200px / 2));
 }
 
-.hero {
-    display: flex;
-    background-color: #E1FF8F;
 
-    &__bg-stars {
-        background: 
-            url(../img/Stars1.svg) no-repeat 63px 69px, 
-            url(../img/Stars2.svg) no-repeat calc(100% - 344px) calc(100% - 59px), 
-            url(../img/BigStars.svg) no-repeat 210% 50%;
-    }
-
-    &__title {
-        color: rgb(32, 32, 39);
-        font-family: Montserrat;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: 0px;
-        text-align: left;
-        margin-top: 196px;
-        margin-bottom: 24px;
-    }
-}
 
 
 
 @import 'hero';
+@import 'belt';
+@import 'about-games';
