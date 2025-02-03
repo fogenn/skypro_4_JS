@@ -49,6 +49,22 @@ $delayBelt: 190s;
     }
 }
 
+@media (max-width: 1300px) {
+    .belt {
+    
+        &__list {
+            padding-right: 35px;
+        }
+    
+        &__item {
+            font-size: 24px;
+            padding-right: 71px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
 .belt-animation-1 {
     animation: scroll1 $delayBelt infinite linear;
     animation-delay: calc($delayBelt * -1);
@@ -58,3 +74,4 @@ $delayBelt: 190s;
     animation: scroll2 $delayBelt infinite linear;
     animation-delay: calc($delayBelt / -2);
 }
+

@@ -3,14 +3,28 @@
 @import '_var';
 
 
+html {
+    scroll-behavior: smooth;
+}
 
 .center {
     padding-left: calc(50% - (1200px / 2));
     padding-right: calc(50% - (1200px / 2));
 }
 
+@media (max-width: 1300px) {
+    .center {
+        padding-left: calc(50% - (950px / 2));
+        padding-right: calc(50% - (950px / 2));
+    }
+}
 
-
+@media (max-width: 1020px) {
+    .center {
+        padding-left: calc(50% - (700px / 2));
+        padding-right: calc(50% - (700px / 2));
+    }
+}
 
 
 @import 'hero';
