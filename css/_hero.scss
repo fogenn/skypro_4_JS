@@ -101,12 +101,36 @@
 
 @media (max-width: 760px) {
     .hero {
-        height: 100vh;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 147px;
+        padding-bottom: 131px; 
         justify-content: center;
 
         &__bg-stars {
             background: 
-            url(../img/Stars1.svg) no-repeat 63px 69px, url(../img/Stars2.svg) no-repeat calc(100% - 40px) calc(100% - 59px), url(../img/BigStarsMob.svg) no-repeat calc(100% + 89px) calc(100% - 77vh), #E1FF8F;
+            url(../img/Stars1Mob.svg) no-repeat 38px 64px, url(../img/Stars2Mob.svg) no-repeat calc(100% - 33px) calc(100% + -28px), url(../img/BigStarsMob.svg) no-repeat calc(100% + 90px) calc(100% - 492px), #E1FF8F;
+            background-size: 75px, 70px, 67%;
+        }
+
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 24px;
+            text-align: center;
+    
+        }
+
+        &__text {
+            font-size: 16px;
+            text-align: center;
+            line-height: 20px;
+            margin-bottom: 36px;
+        }
+
+        &__button {
+            width: 100%;
+            font-size: 16px;
         }
     }
 }
