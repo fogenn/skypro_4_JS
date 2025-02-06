@@ -1,0 +1,60 @@
+@keyframes scroll1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+$delayBelt: 190s;
+
+.belt {
+    display: flex;
+    background: rgb(188, 236, 48);
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        gap: 51px;
+        list-style: none;
+        background: rgb(188, 236, 48);
+        animation: scroll 33s infinite linear;
+        padding-right: 51px;
+    }
+
+    &__item {
+        color: rgb(32, 32, 39);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        text-align: left;
+        text-transform: uppercase;
+        background: url(../img/StarForBelt.svg) no-repeat center right;
+        white-space: nowrap;
+        padding-right: 87px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+}
+
+.belt-animation-1 {
+    animation: scroll1 $delayBelt infinite linear;
+    animation-delay: calc($delayBelt * -1);
+}
+
+.belt-animation-2 {
+    animation: scroll2 $delayBelt infinite linear;
+    animation-delay: calc($delayBelt / -2);
+}

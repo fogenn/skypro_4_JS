@@ -1,0 +1,18 @@
+@import '_fonts';
+@import '_null-style';
+@import '_var';
+
+
+
+.center {
+    padding-left: calc(50% - (1200px / 2));
+    padding-right: calc(50% - (1200px / 2));
+}
+
+
+
+
+
+@import 'hero';
+@import 'belt';
+@import 'about-games';
