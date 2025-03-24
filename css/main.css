@@ -407,7 +407,7 @@ html {
 .card-mini-games__img-container {
   position: relative;
   height: 100%;
-  width: 600px;
+  min-width: 600px;
   overflow: hidden;
   border-radius: 30px;
 }
