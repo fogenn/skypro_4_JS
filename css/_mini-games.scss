@@ -1,0 +1,128 @@
+.mini-games {
+   padding-top: 96px;
+   padding-bottom: 144px;
+   background: 
+   url(../img/Stars-block2.svg) no-repeat calc(100% - 22px) 143px, url(../img/Stars-block3.svg) no-repeat calc(100% - 40px) calc(100% - 51px), rgb(32, 32, 39);
+   background-size: auto, 9%;
+    
+   &__title {
+       color: rgb(255, 255, 255);
+       font-size: 64px;
+       font-weight: 700;
+       line-height: 78px;
+       letter-spacing: 0px;
+       text-align: left;
+       margin-bottom: 72px;
+   }
+
+   &__text {
+       color: rgb(255, 255, 255);
+       font-size: 24px;
+       font-weight: 400;
+       line-height: 32px;
+       letter-spacing: 0px;
+       margin-bottom: 24px;
+   }
+
+   &__wrapper-cards {
+       display: grid;
+       grid-row: auto;
+       gap: 32px;
+   }
+
+}
+
+.card-mini-games {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: flex-start;
+   height: 500px;
+   border-radius: 30px;
+   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+   background: rgb(255, 255, 255);
+
+   &__img-container {
+       position: relative;
+       height: 100%;
+       min-width: 600px;
+       overflow: hidden;
+       border-radius: 30px;
+   }
+
+   &__img-container img {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       object-position: center center;
+       object-fit: cover;
+   }
+   
+   &__text-container {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 24px;
+       padding-top: 48px;
+       padding-left: 48px;
+       word-wrap: break-word;
+   }
+
+   &__card-text {
+       color: rgb(32, 32, 39);
+       font-size: 24px;
+       font-weight: 400;
+       line-height: 110%;
+       letter-spacing: 0px;
+       text-align: left;
+   }
+
+   &__title {    
+       color: rgb(32, 32, 39);
+       font-size: 48px;
+       font-weight: 700;
+       line-height: 39px;
+       letter-spacing: 0px;
+       text-align: left;
+   }
+
+   &__button {
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    margin-top: 12px;
+    padding: 16px 65px;
+    border-radius: 90px;
+    transition: all 0.2s ease-in-out;
+}
+
+    &__button:hover {
+        color: rgb(0, 0, 0);
+        background-color: #fff;
+    }
+}
+
+.card-mini-games:nth-child(2n) {
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+@media (max-width: 1300px) {
+    
+}
+
+@media (max-width: 1020px) {
+    
+}
+
+
+@media (max-width: 760px) {
+    
+}
