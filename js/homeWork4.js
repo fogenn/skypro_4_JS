@@ -6,14 +6,14 @@ for (let i = 0; i < 2; i++) {
 
 // 2-ое задание
 
-for (let i = 0; i < 5; i++) {
-    console.log(i+1);
+for (let i = 1; i < 5; i++) {
+    console.log(i);
 }
 
 // 3-ие задание
 
-for (let i = 0; i < 16; i++) {
-    console.log(i+7);
+for (let i = 7; i < 22; i++) {
+    console.log(i);
 }
 
 // 4-ое задание
@@ -88,8 +88,10 @@ const months = [
     'Декабрь'
 ];
 
-for (const key in months) {
-    console.log(`${+key + 1} - ${months[key]}`);
+
+
+for (const item of months) {
+    console.log(`${months.indexOf(item) + 1} - ${item}`);
 }
 
 // *** 3-ие доп. задание ***
@@ -101,10 +103,10 @@ const book = {
     genre: "Антиутопия",
   };
   
-console.log(book); 
-console.table(book);
-JSON.stringify(book); 
-//По заданию вроде бы этого достаточно. Не смог определиться какой вариант будет приемлемие, по этому указал все три
+for (let key in book) {
+    console.log(`${key}: ${book[key]}`);
+}
+
 
 // *** 4-ое доп. задание ***
 
@@ -112,6 +114,6 @@ const arr = [42, 17, 88, 3, 71, 29, 55, 93, 12, 64];
 let min = arr[0];
 
 
-for (const key in arr) {
-    arr[key] < min ? min = arr[key] : min = min;
+for (const item of arr) {
+    item < min ? min = item : min = min;
 }
