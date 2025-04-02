@@ -11,3 +11,32 @@
         text-align: center;
     }
 }
+
+@media (max-width: 1300px) {
+    .footer {
+
+        &__text {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .footer {
+        padding: 50px 0;
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .footer {
+        padding: 40px 0;
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
